@@ -29,6 +29,7 @@ Name: Name of the event.
 Date: Date and time of the event.
 TotalTickets: Total number of tickets available.
 BookedTickets: Number of tickets already booked (initially 0).
+
 2. POST /bookings
 Description: Books tickets for a specific event.
 Request Body:
@@ -54,6 +55,7 @@ Event ID: Identifier for the event being booked.
 Quantity: Number of tickets booked.
 Timestamp: Time when the booking was made.
 Booking Limit: Each user can book a maximum of 15 tickets per request. Requests exceeding this limit will be truncated to 15 tickets.
+
 3. DELETE /bookings/:id
 Description: Cancels a booking by its ID.
 Response:
@@ -63,6 +65,7 @@ Response:
 
 Details:
 Message: Confirmation of booking cancellation.
+
 4. GET /events
 Description: Retrieves a list of all events with available tickets.
 Response:
@@ -85,6 +88,7 @@ Response:
 
 Details:
 Lists all events with their details including booked and remaining tickets.
+
 5. GET /events/:id
 Description: Retrieves details of a specific event, including booked tickets and remaining tickets.
 Response:
@@ -99,6 +103,7 @@ Response:
 
 Details:
 Remaining Tickets: Total tickets minus booked tickets.
+
 6. POST /print-ticket
 Description: Generates a printable format of the ticket for a specific booking.
 Request Body:
