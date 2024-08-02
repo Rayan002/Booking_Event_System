@@ -1,5 +1,7 @@
 Event Booking System Report
+
 Objective
+
 The goal of this project was to create an Event Booking System that tracks bookings for various events using Node.js, TypeScript, Express.js, and MongoDB. The system allows users to create events, book tickets, cancel bookings, and retrieve event details while adhering to specific constraints and requirements.
 
 Implementation Details
